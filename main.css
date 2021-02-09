@@ -6,9 +6,13 @@
 header{
   background-color: lightblue;
 }
-.jumbotron{
-  background-color: lightgreen;
+section{
+  padding: 50px 0;
   text-align: center;
+}
+.jumbotron, .about{
+  background-color: lightgreen;
+
   color: white;
 }
 ul{
@@ -28,4 +32,5 @@ li{
 .centratore{
   width: 80%;
   margin: 0 auto;
+
 }
