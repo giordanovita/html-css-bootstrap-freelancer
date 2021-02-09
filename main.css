@@ -12,7 +12,6 @@ section{
 }
 .jumbotron, .about{
   background-color: lightgreen;
-
   color: white;
 }
 ul{
@@ -22,8 +21,12 @@ li{
   list-style-type: none;
 
 }
-
-
+.footup{
+  background-color: lightblue;
+}
+.footdouwn{
+  background-color: darkgrey;
+}
 
 
 
