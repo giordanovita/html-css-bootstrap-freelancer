@@ -3,49 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="main.css">
     <title>Start Bootstrap</title>
   </head>
   <body>
  <!-- header CON LARGHEZZA 100% per dare lo sfondo alla sezione,
        intestazione pagine composta da logo(sx) e navbar(dx) -->
-    <header>
-    <div class="container-fluid">
-     <div class="centratore">
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-12">
-          <div class="row">
-            <div class="col-xs-3  col-md-3 col-lg-3">
-              START BOOTSTRAP
-            </div>
+  <header>
 
-            <div class="col-xs-2 col-xs-offset-7 col-md-3 col-md-offset-6 col-lg-3 col-md-offset-6">
-              navbar/hamburgher
-            </div>
-          </div>
-        </div>
+    <nav class="navbar navbar-default">
+     <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="centratore">
+
+
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+       </div>
+         <ul class="nav navbar-nav navbar-right">
+           <li class="hidden-xs ">
+             <a href="#">PORTFOLIO</a>
+           </li>
+           <li class="hidden-xs ">
+             <a href="#">ABOUT</a>
+           </li>
+           <li class="hidden-xs ">
+             <a href="#">CONTACT</a>
+           </li>
+
+         </ul>
+       </div><!-- /.navbar-collapse -->
       </div>
-     </div>
-    </div>
-    </header>
+     </div><!-- /.container-fluid -->
+    </nav>
+  </header>
     <!-- corpo della pagina -->
     <main>
 
-      <section class="jumbotron">
+      <section class="jumbo">
         <div class="container-fluid">
           <div class="centratore">
             <div class="row">
               <div class="col-xs-10 col-xs-offset-1 col-md-8 col-offset-md-2 col-lg-8 col-lg-offset-2">
-                <span>immagine profilo</span>
-                <h1>START BOOTSTRAP</h1>
-                <span>star</span>
+                <img class="jumboimm" src="avataaars.svg" alt="">
+                <h1 class="logo">START BOOTSTRAP</h1>
+                <div class="decolinea"></div>
+                <span><i class="fas fa-star"></i></span>
+                <div class="decolinea"></div>
                 <ul>
-                  <li><a href="#">GRAPHIC ARTIST</a></li>
-                  <li>-</li>
-                  <li><a href="#">WEB DESIGNER</a></li>
-                  <li>-</li>
-                  <li><a href="#">ILLUSTRATOR</a></li>
+                  <li class="listajambo">
+                    Graphic Artists
+                  </li>
+                  <li class="listajambo">-</li>
+                  <li class="listajambo">
+                    Web Designer
+                  </li>
+                  <li class="listajambo">-</li>
+                  <li class="listajambo">
+                    Illustrator
+                  </li>
                 </ul>
 
 
@@ -175,6 +209,7 @@
          <div class="contenitore">
            <div class="row">
              <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+
 
              </div>
 

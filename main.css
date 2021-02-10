@@ -1,21 +1,19 @@
 /* regole debug */
 [class*="col-"]{
   border: 1px solid black;
-  min-height: 80px;
+  min-height: 60px;
 }
-header{
-  background-color: lightblue;
-}
+
+
+
 section{
-  padding: 50px 0;
+
   text-align: center;
 }
-.jumbotron, .about{
-  background-color: lightgreen;
-  color: white;
-}
-ul{
-}
+
+
+
+
 li{
   display: inline-block;
   list-style-type: none;
@@ -32,8 +30,111 @@ li{
 
 
 /* regole generali */
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+
+
 .centratore{
   width: 80%;
   margin: 0 auto;
 
+}
+.jumbo, .about{
+  background-color:  rgb(26, 188, 156);
+  color: white;
+  padding: 180px 0 80px 0;
+}
+
+.footup{
+  background-color: rgb(44, 62, 80);
+}
+.footdouwn{
+  background-color: rgb(26, 37, 47);
+}
+
+/* regole header */
+header{
+  background-color: #2c3e50;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+header .navbar-default{
+  background-color: #2c3e50;
+  border-color: transparent;
+
+
+}
+header .navbar-default .navbar-brand{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+header .navbar-default .navbar-brand:hover{
+  color:white;
+}
+
+header .navbar-default .navbar-nav>li>a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+header .navbar-default .navbar-nav>li>a:hover{
+  color:rgb(26, 188, 156);
+}
+
+/* sezione jambotron */
+.jambo{
+  min-width: 100%
+}
+.jumboimm{
+  width: 100%;
+  height: 250px;
+}
+
+.logo{
+  font-family:'Montserrat';
+  min-width: 100%;
+  white-space: nowrap;
+  padding-top: 20px;
+  font-size: 54px;
+  font-weight:700;
+  line-height: 56px;
+}
+.fa-star{
+  font-size: 3.5rem;
+  margin: 1.5rem;
+}
+.decolinea{
+    width: 100%;
+    max-width: 7rem;
+    height: 0.4rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    background-color: #fff;
+    display:inline-block;
+    vertical-align: text-top;
+}
+/* .decolinea:first-of-type{
+  margin-right: 1.5rem;
+}
+.decolinea:last-of-type{
+  margin-left: 1.5rem;
+} */
+
+.listajambo{
+  font-family:'Lato';
+  font-size: 2.2rem;
+  font-weight: 500;
+ padding: 15px 10px 0 0;
+ color: white;
 }
