@@ -1,12 +1,12 @@
 /* regole debug */
-[class*="col-"]{
-  /* border: 1px solid black; */
+/* [class*="col-"]{
+  border: 1px solid black;
   min-height: 60px;
-}
+} */
 
 
 
-section{
+section, footer{
 
   text-align: center;
 }
@@ -19,12 +19,7 @@ li{
   list-style-type: none;
 
 }
-.footup{
-  background-color: lightblue;
-}
-.footdouwn{
-  background-color: darkgrey;
-}
+
 
 
 
@@ -43,6 +38,8 @@ body{
 .sottotitoli{
   font-size: 48px;
   font-weight: 600;
+  font-family: 'Montserrat';
+  white-space: nowrap;
 }
 .jumbo, .about{
   background-color:  rgb(26, 188, 156);
@@ -50,12 +47,6 @@ body{
 
 }
 
-.footup{
-  background-color: rgb(44, 62, 80);
-}
-.footdouwn{
-  background-color: rgb(26, 37, 47);
-}
 
 /* regole header */
 header{
@@ -94,9 +85,9 @@ header .navbar-default .navbar-nav>li>a:hover{
 }
 
 /* sezione jambotron */
-.jambo{
+.jumbo{
   min-width: 100%;
-  padding: 180px 0 80px 0;
+  padding: 100px 0 0 0;
 }
 .jumboimm{
   width: 100%;
@@ -125,6 +116,7 @@ header .navbar-default .navbar-nav>li>a:hover{
     background-color: #fff;
     display:inline-block;
     vertical-align: text-top;
+
 }
 
 
@@ -134,6 +126,7 @@ header .navbar-default .navbar-nav>li>a:hover{
   font-weight: 500;
  padding: 15px 10px 0 0;
  color: white;
+ padding-bottom: 70px;
 }
 /* sezione portfolio */
 .row .imgbox{
@@ -146,6 +139,7 @@ header .navbar-default .navbar-nav>li>a:hover{
 }
 .portfolio .row .sottotitoli{
 color:#2c3e50;
+padding-top: 70px;
 
 }
 .deco{
@@ -157,12 +151,12 @@ color:#2c3e50;
   padding-bottom: 30px;
 
 }
-.portfolio .decolinea{
+.portfolio .decolinea, .contactme .decolinea{
 background-color: #2c3e50;
 }
-/* sezione about */
-.about{
-  padding-top: 70px;
+/* sezione about, contactme */
+.about, .contactme{
+  padding: 70px 0;
 }
 .about .aboutparagraph{
   font-family: 'Lato';
@@ -170,4 +164,115 @@ background-color: #2c3e50;
   line-height: 30px;
   text-align: left;
   padding-top: 25px;
+}
+.boxscarica{
+padding: 50px 0 ;
+
+}
+.bottone{
+  color: white;
+  font-size: 23px;
+  line-height: 30px;
+  padding:15px 15px;
+  border-radius: 8px;
+  border: 1.5px solid white;
+  white-space: nowrap;
+}
+
+.iconascarica:hover{
+  color:black;
+  background-color: white;
+  text-decoration: none;
+}
+.contactme .deco{
+  margin-bottom: 60px;
+}
+
+.campi{
+  width: 100%;
+  min-width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  font-size: 25px;
+  color: rgb(73, 80, 87);
+  padding: 25px;
+}
+.campi:last-child{
+  padding-bottom: 120px;
+}
+.bottone.inviaform{
+  color:#fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+
+}
+.contactme .sx{
+  text-align: left;
+}
+.inviaform:hover{
+  text-decoration: none;
+  background-color:#159a80;
+  border-color: #148f77;
+
+}
+
+/* regole footer */
+footer{
+  color: white;
+  font-family: 'Montserrat';
+}
+.footup{
+  background-color: rgb(44, 62, 80);
+}
+.footdouwn{
+  background-color: rgb(26, 37, 47);
+}
+
+
+footer .titlefoot{
+font-size: 25px;
+line-height: 29px;
+padding: 30px 0 20px 0;
+font-weight: 600;
+}
+footer .contenutotesto{
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 80px;
+}
+.fab{
+  min-width:  20px;
+  color: white;
+
+
+}
+.iconesocial{
+  border: 1.3px solid white;
+  border-radius: 100%;
+  background-color: rgb(44, 62, 80);
+  padding:10px;
+  margin-left: 10px;
+
+}
+.fab:hover{
+color: #212529;
+background-color: #f8f9fa;
+border-color: #f8f9fa;
+
+}
+.iconesocial:hover{
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  text-decoration: none;
+}
+.linkfinale{
+  display: block;
+  color:#1abc9c;
+}
+.linkfinale:hover{
+  color: #1abc9c;
+}
+.footdouwn .diritti{
+  line-height: 60px;
+  font-size: 15px;
 }
