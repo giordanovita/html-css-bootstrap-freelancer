@@ -1,5 +1,5 @@
 /* regole debug */
-/* [class*="col-"]{
+ /* [class*="col-"]{
   border: 1px solid black;
   min-height: 60px;
 } */
@@ -9,6 +9,7 @@
 section, footer{
 
   text-align: center;
+  min-width: 100%;
 }
 
 
@@ -36,10 +37,11 @@ body{
 
 }
 .sottotitoli{
+  /* min-width: 100%; */
   font-size: 48px;
   font-weight: 600;
   font-family: 'Montserrat';
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .jumbo, .about{
   background-color:  rgb(26, 188, 156);
@@ -109,7 +111,7 @@ header .navbar-default .navbar-nav>li>a:hover{
 }
 .decolinea{
     width: 100%;
-    max-width: 7rem;
+    max-width: 10rem;
     height: 0.4rem;
     background-color: #2c3e50;
     border-radius: 1rem;
@@ -131,12 +133,14 @@ header .navbar-default .navbar-nav>li>a:hover{
 /* sezione portfolio */
 .row .imgbox{
   margin-bottom: 50px;
+  position: relative;
 }
 .row .imgbox img{
   width: 310px;
   height: 250px;
   border-radius: 10px;
 }
+
 .portfolio .row .sottotitoli{
 color:#2c3e50;
 padding-top: 70px;
@@ -243,26 +247,25 @@ footer .contenutotesto{
 .fab{
   min-width:  20px;
   color: white;
-
-
-}
-.iconesocial{
+  padding:16px 14px;
   border: 1.3px solid white;
   border-radius: 100%;
-  background-color: rgb(44, 62, 80);
-  padding:10px;
-  margin-left: 10px;
-
+}
+.fab:nth-child(odd){
+  padding: 14px 14px;
+}
+.fab:first-child{
+  padding:11px 14px;
+}
+.iconesocial{
+ margin-left: 10px;
 }
 .fab:hover{
 color: #212529;
 background-color: #f8f9fa;
-border-color: #f8f9fa;
 
 }
-.iconesocial:hover{
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+.iconesocial:hover {
   text-decoration: none;
 }
 .linkfinale{
